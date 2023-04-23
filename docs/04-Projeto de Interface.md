@@ -1,35 +1,61 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
-
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+O diagrama abaixo apresenta a interação do usuário durante a navegação na página web.
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+![Protótipo de fluxo de usuário.](img/telas/wireframe.png)
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+## Tela de login
+
+A primeira tela apresenta uma estrutura comum, onde está representando a interface inicial de acesso. Viabilizando uma plataforma segura, opcional fazendo apenas um login ou cadastro.
+
+![Protótipo de tela de login.](img/telas/tela-login.png)
+
+## Tela de cadastro
+
+Dando início a opção de cadastro, na tela encontrasse o login onde se refere a um cadastro de acesso a privacidade e segurança de seus dados pessoais. Viabilizando uma plataforma segura. 
+
+![Protótipo de tela de cadastro](img/telas/tela-cadastro.png)
+
+## Tela de inicio
+
+A tela de inicio destaca-se um visual amplo ao aplicativo de uma forma padrão onde pode se considerar cada ferramenta um símbolo de acesso a página. 
+*	Ferramenta de pesquisa. 
+*	Ícones com direcionamento padrão. 
+*	Plataforma bem dinâmica e acessível. 
+*	Lista de categorias. 
+*	Direcionamento de cada estágio e suas informações bem detalhadas e sem melindres. 
+
+![Protótipo de tela de inicio](img/telas/tela-home.png)
+
+## Tela favoritos
+
+De acordo com o tema pode-se observar que a versão do aplicativo tem a disponibilidade e acesso a salvar estágio que interessam o universitário de acordo com sua necessidade. 
+
+![Protótipo de favoritos](img/telas/tela-favoritos.png)
+
+## Tela da ferramenta de currículo
+
+Afunilando mais a estratificação do layout de um aplicativo, pode-se observar a ferramenta de currículo, onde direciona a uma plataforma de cadastro pessoal de cada universitário que se deseja se candidatar a vaga aberta de um estágio, nele pode se observar todas os critérios de um cadastramento necessário. 
+
+![Protótipo de ferramenta de currículo](img/telas/tela-envio.png)
+
+## Tela de alteração cadastral
+
+Neste layout podemos observar ferramentas de direcionamento e comodidade para alterar seus dados pessoais necessários para sua sinalização perante a vaga que se inscreveu. 
+*	Como foto de perfil.  
+*	Contato.  
+*	Alteração de senha.  
+*	Alteração de e-mail.
+
+![Protótipo de alteração](img/telas/tela-alteracao.png)
+
+## Tela de avaliação de empresas
+
+Para trazer uma melhoria de acesso, de layout, ferramentas em geral, esta tela dá ao estudante a oportunidade de expressar sua opinião sobre as empresas e as oportunidades de estágio, acesso levando em consideração pontos positivos e negativo. Com o intuito de uma melhoria de acesso de uma forma geral aos universitários. 
+
+![Protótipo de alteração](img/telas/tela-avaliacao.png)
 
 
-## Wireframes
-
-![Exemplo de Wireframe](img/wireframe-example.png)
-
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)

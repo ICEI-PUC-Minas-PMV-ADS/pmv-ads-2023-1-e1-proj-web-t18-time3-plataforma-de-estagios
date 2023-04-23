@@ -6,7 +6,7 @@
 
 `Eixo 1`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto visa criar uma plataforma que conecta estudantes e empresas, oferecendo oportunidades de desenvolvimento profissional por meio de estágios. Através da divulgação de vagas em diversas empresas, a plataforma busca oferecer aos estudantes a chance de adquirir experiência prática em suas áreas de interesse e contribuir para a formação de novos talentos.
 
 ## Integrantes
 

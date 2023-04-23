@@ -24,4 +24,5 @@ O foco principal é composto por estudantes universitários ou de ensino técnic
 ## Personas
 
 ![alt="Persona: Fernando Almeida"](./img/persona-fernando-almeida.png)
-
+![alt="Persona: Sergio Marques"](./img/persona-sergio-marques.png)
+![alt="Persona: Isabel de Souza"](./img/persona-isabel-souza.png)

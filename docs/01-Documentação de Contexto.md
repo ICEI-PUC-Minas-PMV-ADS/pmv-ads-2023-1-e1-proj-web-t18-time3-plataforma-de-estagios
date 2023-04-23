@@ -1,46 +1,27 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+ No âmbito acadêmico, o estágio é uma ferramenta essencial para que os estudantes apliquem seus conhecimentos em um ambiente profissional, desenvolvam novas habilidades e construam redes de contatos. No entanto, muitas empresas não oferecem vagas de estágio suficientes para atender à demanda dos estudantes, o que pode ser particularmente problemático em regiões ou setores específicos do mercado.
+ 
+ Para abordar essa questão, uma plataforma online de vagas de estágio pode ser uma solução prática e eficiente para ambas as partes. Por meio dessa plataforma, os estudantes têm acesso a uma lista de oportunidades de estágio que sejam compatíveis com seus interesses e habilidades, o que lhes permite se candidatar a essas vagas de maneira ágil e eficaz. Para as empresas, a plataforma pode funcionar como uma forma de anunciar suas vagas de estágio para um grande número de candidatos qualificados e gerenciar o processo de seleção de maneira eficiente.
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+ Em muitas ocasiões, as empresas não oferecem vagas de estágio em número suficiente para atender a demanda de estudantes. Isso pode ser ainda mais acentuado em regiões ou setores específicos do mercado.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+ Sabendo dessa demanda, o projeto visa conectar estudantes e empresas, oferecendo oportunidades de desenvolvimento profissional por meio de estágios. Através da divulgação de vagas em diversas empresas, a plataforma busca oferecer aos estudantes a chance de adquirir experiência prática em suas áreas de interesse e contribuir para a formação de novos talentos.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+ Dados indicam que o número de estudantes universitários no Brasil vem aumentando nos últimos anos, com cerca de 8,6 milhões de alunos matriculados em 2019. Em contrapartida, o número de vagas de estágio oferecidas pelas empresas ainda é relativamente baixo, o que pode dificultar a entrada dos estudantes no mercado de trabalho após a conclusão de seus cursos. Portanto, uma plataforma de vagas de estágio pode ajudar a equilibrar essa oferta e demanda e fornecer uma solução para o problema.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O foco principal é composto por estudantes universitários ou de ensino técnico, que buscam uma oportunidade de colocar em prática os conhecimentos adquiridos na sala de aula e obter experiência profissional. Esses estudantes podem ter diferentes perfis e interesses, dependendo da área de atuação que desejam seguir e o tipo de estágio que procuram, como estágio obrigatório, voluntário ou remunerado. A plataforma pode também atrair empresas e organizações que buscam estagiários qualificados para integrar suas equipes e contribuir para suas atividades, como parte de um processo de seleção e desenvolvimento de profissionais talentosos.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+## Personas
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+![alt="Persona: Fernando Almeida"](./img/persona-fernando-almeida.png)
+

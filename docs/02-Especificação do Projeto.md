@@ -1,7 +1,5 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
 Para obter uma compreensão precisa dos desafios enfrentados pelos usuários e das principais áreas a serem abordadas no projeto, a equipe realizou um trabalho de pesquisa. Durante essa etapa, os membros da equipe conversaram com possíveis usuários e conduziram entrevistas. Com base nas informações coletadas, foram criadas personas e suas histórias, o que definiram os detalhes relevantes para o desenvolvimento da plataforma.
 
 ## Personas

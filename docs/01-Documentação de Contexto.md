@@ -20,9 +20,3 @@
 ## Público-Alvo
 
 O foco principal é composto por estudantes universitários ou de ensino técnico, que buscam uma oportunidade de colocar em prática os conhecimentos adquiridos na sala de aula e obter experiência profissional. Esses estudantes podem ter diferentes perfis e interesses, dependendo da área de atuação que desejam seguir e o tipo de estágio que procuram, como estágio obrigatório, voluntário ou remunerado. A plataforma pode também atrair empresas e organizações que buscam estagiários qualificados para integrar suas equipes e contribuir para suas atividades, como parte de um processo de seleção e desenvolvimento de profissionais talentosos.
-
-## Personas
-
-![alt="Persona: Fernando Almeida"](./img/persona-fernando-almeida.png)
-![alt="Persona: Sergio Marques"](./img/persona-sergio-marques.png)
-![alt="Persona: Isabel de Souza"](./img/persona-isabel-souza.png)

@@ -1,8 +1,6 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
 Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
 
 ## Controle de Versão
@@ -37,41 +35,27 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ## Gerenciamento de Projeto
 
-### Divisão de Papéis
+A equipe está organizada da seguinte maneira:
 
-Apresente a divisão de papéis entre os membros do grupo.
+*	__Scrum Master:__ José Luis;
+*	__Product Owner:__ Maria Fernanda.
+*	__Equipe de Desenvolvimento:__ José, Maria Fernanda, Lafayete, Nicole.
+*	__Equipe de Design:__ José, Maria Fernanda, Lafayete, Nicole.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+O grupo fará o uso de metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando Planner, devido a instituição utilizar o suite do Office 365. A organização foi estruturada da seguinte maneira: 
 
-### Processo
+*	__Product Backlog:__ Todas as tarefas referentes ao projeto serão adicionadas nesta lista, onde serão rotuladas e conforme o desempenho nos o avanço nos Sprints, serão distribuídas.
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+* __Sprints:__ Existem listas específicas para cada sprint, tendo em vista que a plataforma Planner permite que o controle do estado da tarefa seja feito na mesma. Dessa forma, indo de encontro com a metodologia Scrum.
+
 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
+|Ambiente|Plataforma|Link de acesso|
+|------------|-------------|-----------|
+|Repositório de código fonte|GitHub|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t18-time3-plataforma-de-estagios|
+|Documentos do projeto|Google Drive|https://docs.google.com/document/d/1JBeba9PBQVL0bLlan_WJM-qbQrdGwd86/edit?usp=share_link&ouid=104293823785896146178&rtpof=true&sd=true|
+|Projeto de Interface e  Wireframes|MarvelApp|https://marvelapp.com/prototype/jce2d17/screen/91348857|
+|Gerenciamento do Projeto|Planner|https://tasks.office.com/sgapucminasbr.onmicrosoft.com/en-US/Home/Planner#/plantaskboard?groupId=481f1ce7-ccdc-4d12-8012-01f9e2014fe5&planId=3oiyuCOW_06bCHY-wJ-20WQAHCdJ |
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
-
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)

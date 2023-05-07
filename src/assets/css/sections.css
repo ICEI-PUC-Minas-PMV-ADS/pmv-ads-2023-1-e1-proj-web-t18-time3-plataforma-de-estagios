@@ -1,0 +1,89 @@
+.section__banner{
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.section__texto{
+    width: 100%;
+}
+
+.section__texto div{
+    padding: 24px;
+}
+
+.section__texto h1, p{
+    margin: 10px;
+    text-align: justify;
+}
+
+.section__vagas{
+    background-color: rgb(228, 228, 228);
+}
+
+.section__vagas{
+    padding: 30px;
+}
+
+.vagas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.vagas h1{
+    font-size: 3rem ;
+    font-weight: 600;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.vagas p{
+    width: 75%;
+    text-align: center;
+}
+
+.caixa__empresas{
+    display: flex;
+    width: 80%;
+    height: 200px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 25px;
+}
+
+.empresa{
+    width: 124px;
+    height: 124px;
+    background-image: url(../img/logo-ifood-512.png);
+    background-size:cover;
+    margin: 25px;
+}
+
+.empresa:hover{
+    width: 148px;
+    height: 148px;
+    animation: 0.5s;
+}
+
+#ifood{
+    background-image: url(../img/logo-ifood-512.png);
+    background-size:cover;
+}
+
+#vale{
+    background-image: url(../img/logo-vale-512.png);
+    background-size:cover;
+}
+
+#stone{
+    background-image: url(../img/stone-512.png);
+    background-size:cover;
+}

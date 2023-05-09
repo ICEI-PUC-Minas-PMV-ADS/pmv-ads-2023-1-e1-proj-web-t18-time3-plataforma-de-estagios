@@ -1,0 +1,95 @@
+html {
+    background-color: rosybrown;
+    font-family: "Heuvetica Neue", Arial, sans-serif;
+}
+
+:root{
+    --login-primary-color: Snow;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: var(--login-primary-color);
+}
+
+form{
+    width: 350px;
+    background-color: lavender;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px grey;
+    border-left: 10px solid palevioletred;
+}
+
+fieldset{
+    border: none;
+}
+
+input,
+label{
+    display: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: .25em;
+}
+input{
+    padding: .75em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+    border: 1px solid white;
+    font-size: 1em;
+}
+
+legend{
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+.btn{
+    font-size: 1em;
+    width: fit-content;
+    margin-left: auto;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.btn-primary 
+{
+    
+    background-color: plum ;
+    color:black;
+}
+
+.btn-secondary{
+    background-color: aliceblue;
+    color: purple;
+}
+
+.form__action{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form__action__aside{
+    font-size: .85rem;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.fa-eye{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+}

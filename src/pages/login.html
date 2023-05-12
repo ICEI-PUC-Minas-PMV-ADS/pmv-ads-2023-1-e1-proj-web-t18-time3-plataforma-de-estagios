@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
    
@@ -13,22 +13,30 @@
         <fieldset class="form__fieldset">
             <legend class="form__title">Login</legend>
 
-            <label for="user" class="form__label">Usuário</label>
-            <input type="text" id="user" name="user" required class="form__input">
+            <div class='label-float'>
+                <label id='userLabel' for='usuario'>Usuario</label>
+                <input type='text' id='usuario' paceholder='' required>
+                </div>
           
-            <label for="password"  class="form__label">Senha</label>
-            <input type="password" id="password" name="password" required class="form__input">
+                <div class='label-float'>
+                    <label id='senhaLabel' for='senha'>Senha</label>
+                    <input type='password' id='senha' paceholder='' required>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                  </div>
           
             <div>
-                <div class="form__action_btns">
-                    <input type="submit" value="Entrar" class="botao" value="login" >
-                    <a href="#">Esqueci minha senha</a>
-                </div>
+                <div class='justify-center'>
+                    <button onclick='entrar()'>Entrar</button>
+                  
+
+                <div id='msgError'></div>
+
                 <br><br> 
                 <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
             </div>
         </fieldset>
     </form> 
+    <script src="../assets/js/login.js"></script>
 </body>
 
 </html>

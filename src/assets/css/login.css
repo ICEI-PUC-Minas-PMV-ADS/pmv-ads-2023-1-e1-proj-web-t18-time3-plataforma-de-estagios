@@ -71,10 +71,11 @@ legend{
     border: none;
 }
 
-.botao:hover{
+.justify-center:hover{
     background-color:rgb(30, 87, 87);
     cursor: pointer;
 }
+
 
 
 .form__action_btns{
@@ -101,3 +102,26 @@ legend{
     right: 10px;
     cursor: pointer;
 }
+
+.btn-cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }

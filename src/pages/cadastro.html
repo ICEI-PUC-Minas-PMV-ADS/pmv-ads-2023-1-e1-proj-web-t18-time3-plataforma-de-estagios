@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    
+
     <title>Login e cadastro</title>
     <link rel="stylesheet" href="../assets/css/login.css">
     <hr>
@@ -10,34 +11,56 @@
 
 <body>
     <form action="#" method="get" autocomplete="off" class="for">
-        <fieldset class="form__fieldset">
-            <legend class="form__title">Cadastre-se</legend>
+        <div>
+            <fieldset class="form__fieldset">
+                <legend class="form__title">Cadastre-se</legend>
 
-            
-            <label for="name" class="form__label">Nome</label>
-            <input type="name" id="name" name="name" required class="form__input">
+                <div id='msgError'></div>
+                <div id='msgSuccess'></div>
 
-            <label for="email" class="form__label">Email</label>
-            <input type="email" id="email" name="email" required class="form__input">
 
-            <label for="user" class="form__label">Usuário</label>
-            <input type="text" id="user" name="user" required class="form__input">
+                <div class="label-float">
+                    <label id="labelNome" for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder=" " required>
+                </div>
 
-            <label for="password" class="form__label">Senha</label>
-            <input type="password" id="password" name="password" required class="form__input">
-         
-            <label for="password" class="form__label">Confirmar senha</label>
-            <input type="password" id="password" name="password" required class="form__input">
-          
-            <div class="form__action">
-                <input type="submit" value="Cadastre-se" class="botao" value="login">
-                <br><br>
-                <p>Já possui cadastro?
-                <a href="./login.html">Faça seu login</a>
-                </p>   
-            </div>
+                <label id="labelEmail" class="form__label">Email</label>
+                <input type="email" id="email" required class="form__input">
+
+                <div class="label-float">
+                    <label id="labelUsuario" for="usuario">Usuário</label>
+                    <input type="text" id="usuario" placeholder=" " required>
+                </div>
+
+                <div class="label-float">
+                    <label id="labelSenha" for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder=" " required>
+                    <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="label-float">
+                    <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+                    <input type="password" id="confirmSenha" placeholder=" " required>
+                    <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+
+                <div class="btn-cadastro" id="btn-cadastro">
+                    <button onclick='cadastrar()'>Cadastrar</button>
+                </div>
+                <div façaCadastro>
+                    <br></br>
+                    <p>Já possui cadastro?
+                        <a href="./login.html">Faça seu login</a>
+                    </p>
+                </div>
+
+        </div>
+        </div>
         </fieldset>
-    </form> 
+    </form>
+    <script src="../assets/js/cadastro.js"></script>
 </body>
 <hr>
+
 </html>

@@ -1,93 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="./src/assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Primeiro estágio</title>
 </head>
 <body>
-    <div id="container">
-        <div id="topo">
 
-            <div class="header">
-            <div class="logo">
-                <h1 class="logo">Primeiro Estagio</h1>
-            </div>
-            <ul id="navegacao">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="curriculo.html">Curriculo</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
-                <li><a href="LGPD.html">LGPD</a></li>
-                <li><a href="fale-conosco.html">Fale Conosco</a></li>
-            </ul>
+<!--Cabeçalho-->
+
+<header>
+    <h2 class="logo">Primeiro estágio</h2>
+    <nav>
+        <ul class="menu__lista">
+            <li class="menu__item"><a href="#">Home</a></li>
+            <li class="menu__item"><a href="#">Currículo</a></li>
+            <li class="menu__item"><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <form action="">
+        <div class="pesquisa">
+            <input type="text" name="" id="pesquisa" class="barra__pesquisa">
+            <button class="botao__pesquisa"><span class="material-icons">search</span></button>
         </div>
-        </div>
-        <div class="img-top"></div>
-        <div id="conteudo">
-            <div id="primario"><div class="caixa">
-                <h2>BUSCAR VAGAS</h2>
-                <div class="caixa-conteudo">
-                    <p>Busque por vagas de estagio</p>
-                    <br><br>
-                    <button class="" type="submit"><a href="#">Acessar</a> </button>
-                    <spam>ou</spam>
-                    <button class="" type="submit"><a href="#">Cadastrar</a> </button>
-                    
+    </form>
 
-                </div>
-            </div>
-        </div>
-
-            <div id="secundario"><div class="caixa">
-                <h2>EMPRESAS</h2>
-                <div class="caixa-conteudo">
-                  
-                    <div class="caixa-conteudo">
-                        <p>Atualização cadastral, abertura e acompanhamento das vagas</p>
-                        <br><br>
-                        <button><a href="#">Acessar</a></button>
-                        <spam>ou</spam>
-                        <button><a href="empresa.html">Cadastrar</a></button>
-                        <br>
-                    </div>
-                </div>
-
-                </div>
-             </div>
-
-             <div id="lateral">
-                <div class="caixa">
-                    <h2>MENU</h2>
-                    <div class="caixa-conteudo">
-                    <ul>
-                        <li>
-                            <a href="#">NOTICIAS</a>
-                            <a href="#">EVENTOS</a>
-                            <a href="#">SUAS VAGAS</a>
-                            <a href="#">EMPRESAS</a>
-                            <a href="#">DUVIDAS</a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-
-            </div> 
-       </div>
-
+    <div class="botoes__acesso">
+        <a class="button" href="./src/pages/login.html">Entrar</a>
     </div>
 
- 
+</header>
 
+<!--Fim do cabeçalho-->
 
-    <footer id="container-rodape" style="clear: both;">
-        <div id="rodape">
-            <h2>Desenvolvido pela equipe 3</h2>
+<section class="section__banner"></section>
+
+<section class="section__texto">
+    <div>
+        <h1>O primeiro passo para uma carreira promissora começa aqui!</h1>
+        <p> Se você está buscando uma maneira de impulsionar sua carreira, 
+        nossa plataforma de estágios é o lugar certo para você. Com acesso a diversas oportunidades de estágio em empresas renomadas em todo 
+        o país, você pode dar o primeiro passo em direção a um futuro profissional promissor. Nosso objetivo é conectar você com as melhores
+         opções de estágio e fornecer suporte ao longo de todo o processo, desde a inscrição até a sua contratação. Além disso, oferecemos
+         recursos e ferramentas exclusivas para ajudá-lo a desenvolver suas habilidades e se destacar no mercado de trabalho. Não perca mais
+         tempo, comece agora a sua jornada de sucesso conosco!</p>
+
+    </div>
+</section>
+
+<section class="section__vagas">
+    <div class="vagas">
+        <h1>Esteja em contato com as melhores!</h1>
+        <p>Encontre as melhores oportunidades de estágio nas maiores empresas do Brasil - só aqui na Primeiro Estágio. Conecte-se agora e dê o primeiro passo para uma carreira de sucesso.</p>
+        <div class="caixa__empresas">
+            <div class="empresa" id="stone"></div>
+            <div class="empresa" id="vale"></div>
+            <div class="empresa" id="ifood"></div>
         </div>
-    </footer>
-    
+    </div>
+</section>
+
+<footer>
+    <h4>Desenvolvido pelo grupo 3</h4>
+</footer>
+
+
+
 
 
 </body>
-</html>

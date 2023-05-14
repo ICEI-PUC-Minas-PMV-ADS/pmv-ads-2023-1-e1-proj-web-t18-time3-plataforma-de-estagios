@@ -97,9 +97,9 @@ function cadastrar(){
     msgError.setAttribute('style', 'display: none')
     msgError.innerHTML = ''
     
-    setTimeout(()=>{
-        window.location.href = 'http://127.0.0.1:5500/pmv-ads-2023-1-e1-proj-web-t18-time3-plataforma-de-estagios/src/pages/login.html'
-    }, 3000)
+  
+    window.location.href = 'C:\Users\josel\Desktop\pmv-ads-2023-1-e1-proj-web-t18-time3-plataforma-de-estagios\pagina-principal.html'
+ 
   
     
   } else {

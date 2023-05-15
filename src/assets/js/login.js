@@ -49,7 +49,7 @@ function entrar(){
     localStorage.setItem('token', token)
     localStorage.setItem('userLogado', JSON.stringify(userValid))
 
-    window.location.href = 'http://127.0.0.1:5500/pmv-ads-2023-1-e1-proj-web-t18-time3-plataforma-de-estagios/src/pages/home.html'
+    window.location.href = 'http://127.0.0.1:5500/pmv-ads-2023-1-e1-proj-web-t18-time3-plataforma-de-estagios/index.html'
   } else {
     userLabel.setAttribute('style', 'color: red')
     usuario.setAttribute('style', 'border-color: red')

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.janela__formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.377);
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lado__acesso{
+    width: 50%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.lado__acesso__conteudo{
+    padding: 2rem;
+    height: 87.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lado__acesso__conteudo form{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    width: 80%;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lado__acesso__conteudo input{
+    margin: 0.7rem 0 0.7rem 0;
+    width: 85%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(87, 87, 87);
+    padding: 0.3rem 0 0.3rem 0;
+    align-self: center;
+    
+}
+
+.lado__acesso__conteudo label, p{
+    font-size: small;
+}
+
+.lado__acesso__conteudo a{
+    color: rgb(18, 144, 144)
+}
+
+
+.lado__imagem{
+    width: 50%;
+    height: 100%;
+    border-radius: 0 1rem 1rem 0;
+    background-image: url('../img/cadastro-background.jpg');
+    background-position: -150px 0px;
+    background-size: cover;
+}
+
+.botao__acesso{
+    margin-top: 1.5rem;
+    padding: 0.3rem;
+    width: 40%;
+    height: 2.5rem;
+    align-self: center;
+    background-color: rgb(18, 144, 144);
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.botao__acesso:hover{
+    background-color: rgb(15, 110, 110);
+    cursor: pointer;
+}

@@ -5,11 +5,12 @@ header{
     justify-content: space-between;
     padding: 1rem;
     box-shadow:0px 3px 15px #b3b1b1;
-    z-index: 2;
+
 }
 
 .logo{
     padding: 0.25rem;
+    cursor: pointer;
 }
 
 .menu__lista{
@@ -40,28 +41,26 @@ header{
 }
 .pesquisa{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     padding: 0px 14px;
 }
 
 .barra__pesquisa{
-    width: 240px;
+    width: 400px;
     height: 30px;
     outline: none;
     border: none;
     padding: 5px;
-    border-radius: 10px;
-    margin: 0px 14px;
 }
 
 .botao__pesquisa{
-    outline: none;
-    border: none;
-    background-color:rgb(39, 116, 116);
-    width: 40px;
+    width: 40px; 
     height: 40px;
-    border-radius: 40px;
+    background-color: rgb(18, 144, 144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
 }
 
 .botao__pesquisa:hover, .botoes__acesso a:hover{
@@ -73,3 +72,72 @@ header{
     color: rgb(255, 255, 255);
 }
 
+/* ----------19/05-----------------*/
+
+.icone__usuario{
+    width: 40px; /* Tamanho fixo para a div icone__usuario */
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.usuario{
+    display: flex;
+    margin-right: 1rem;
+}
+
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    right: 0;
+} 
+
+.dropdown-content2{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0;
+} 
+
+.dropdown-content a, button{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content2 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content button{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left ;
+    font-size: medium;
+    border:none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content a:hover, button:hover{
+    background-color: rgb(230, 230, 230);
+  }

@@ -33,13 +33,28 @@ document.addEventListener('DOMContentLoaded', function() {
         var nome = user.nome;
         var sobrenome = user.sobrenome;
 
-        var usernameElement = document.getElementById('username');
+        var usernameElement = document.getElementById('nome');
+        var fullnameElement = document.getElementById('complete-name');
+        var emailElement = document.getElementById('user-email');
 
         if (usernameElement) {
-            usernameElement.innerHTML = '<strong>Usuário:</strong><br>' + username + '<br><strong>Nome:</strong><br> '+ nome + ' ' + sobrenome+ '<br><strong>E-mail:</strong><br>'+email;
+            usernameElement.innerHTML = '<p>'+nome+'<p/>';
         } else {
-            console.error("Element with ID 'username' not found on the page.");
+            console.error("Element with ID 'nome' not found on the page.");
         }
+
+        if (fullnameElement) {
+            fullnameElement.innerHTML = nome+' '+sobrenome;
+        } else {
+            console.error("Element with ID 'complete-name' not found on the page.");
+        }
+
+        if (emailElement) {
+            emailElement.innerHTML = email;
+        } else {
+            console.error("Element with ID 'user-email' not found on the page.");
+        }
+
 
         } else {
             // Caso contrário, redireciona para a página de login

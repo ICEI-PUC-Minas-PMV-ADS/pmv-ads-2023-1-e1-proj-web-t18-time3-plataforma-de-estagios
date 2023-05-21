@@ -11,7 +11,7 @@
 <body>
     
     <header>
-        <h2 class="logo" onclick="toggleDropdown2()">Primeiro estágio</h2>
+        <h2 class="logo" onclick="voltarInicio()">Primeiro estágio</h2>
         <nav>
             <ul class="menu__lista">
                 <li class="menu__item"><a href="#">Currículo</a></li>
@@ -41,13 +41,30 @@
         </header>
 
         <div class="dropdown-content">
-            <a href="./perfil.html">Perfil</a>
+            <a href="#">Perfil</a>
             <a href="#">Favoritos</a>
             <button id="logoutButton">Sair</button>
         </div>
         <main>
             <section class="principal">
-                a
+                <div class="perfil__usuario">
+                    <section class="identificacao">
+                        <div class="material-icons" id="foto-perfil">add_a_photo</div>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <h3 id="complete-name"></h3>
+                            <h4 id="user-email"></h4>
+                        </div>
+                        <span style="width: 100%; border-bottom: 1px solid rgb(156, 156, 156)"></span>
+                    </section>
+                    <section class="editar">
+                        Editar perifl
+                        <input type="text" id="nome" placeholder="Nome" required>
+                        <input type="text" id="sobrenome" placeholder="Sobrenome" required>
+                        <input type="email" id="email" placeholder="E-mail" required>
+                        <input type="text" id="username" placeholder="Nome de usuário" required>
+                        <button type="submit" class="botao__acesso">Salvar</button>
+                    </section>
+                </div>
             </section>  
         </main>
 
@@ -75,9 +92,8 @@
         dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
         }
 
-        function toggleDropdown2() {
-        var dropdownContent = document.querySelector('.dropdown-content2');
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        function voltarInicio() {
+            window.location.href = 'pagina-principal.html';
         }
        
       </script>

@@ -74,11 +74,13 @@ header{
 
 /* ----------19/05-----------------*/
 
-.icone__usuario{
+#icone-usuario{
     width: 40px; /* Tamanho fixo para a div icone__usuario */
     height: 40px;
     border-radius: 100%;
     background-color: rgb(201, 201, 201);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;

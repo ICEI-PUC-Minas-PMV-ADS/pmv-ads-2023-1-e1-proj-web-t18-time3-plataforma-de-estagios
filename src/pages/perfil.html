@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Página principal</title>
-</head>
-<body>
-    
-    <header>
-        <h2 class="logo" onclick="voltarInicio()">Primeiro estágio</h2>
-        <nav>
-            <ul class="menu__lista">
-                <li class="menu__item"><a href="#">Currículo</a></li>
-                <li class="menu__item"><a href="#">Empresas</a></li>
-                <li class="menu__item"><a href="#">LGPD</a></li>
-                <li class="menu__item"><a href="#">Sobre</a></li>
-            </ul>
-        </nav>
-    
-       
-
-        <form action="">
-            <div class="pesquisa">
-                <input type="text" name="" id="pesquisa" class="barra__pesquisa" placeholder="Pesquise vagas...">
-                <button class="botao__pesquisa"><span class="material-icons">search</span></button>
-            </div>
-        </form>
-
-        <div class="usuario">
-            <div id="nome"></div>
-            <div class="icone__usuario">
-                <div class="material-icons" onclick="toggleDropdown()">person</div>
-            </div>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="../assets/js/header.js"></script>
+        <title>Página principal</title>
+    </head>
+    <body>
         
+        <header>
+            <h2 class="logo" onclick="voltarInicio()">Primeiro estágio</h2>
+            <nav>
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="#">Currículo</a></li>
+                    <li class="menu__item"><a href="#">Empresas</a></li>
+                    <li class="menu__item"><a href="#">LGPD</a></li>
+                    <li class="menu__item"><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        
+           
     
+            <form action="">
+                <div class="pesquisa">
+                    <input type="text" name="" id="pesquisa" class="barra__pesquisa" placeholder="Pesquise vagas...">
+                    <button class="botao__pesquisa"><span class="material-icons">search</span></button>
+                </div>
+            </form>
+    
+            <div class="usuario">
+                <div id="nome"></div>
+                <div>
+                    <div id="icone-usuario" class="material-icons" onclick="toggleDropdown()">person</div>
+                </div>
+            </div>
+            
+        
         </header>
 
         <div class="dropdown-content">
@@ -49,52 +50,137 @@
             <section class="principal">
                 <div class="perfil__usuario">
                     <section class="identificacao">
-                        <div class="material-icons" id="foto-perfil">add_a_photo</div>
+                        <h5 id="user-username" style="color: gray;"></h4>
+                        <div class="material-icons" id="foto-perfil" onclick="selectFile()">add_a_photo</div>
+                        <input type="file" id="fileUpload" accept="image/*" style="display: none;">
                         <div style="display: flex; flex-direction: column; align-items: center;">
                             <h3 id="complete-name"></h3>
                             <h4 id="user-email"></h4>
                         </div>
-                        <span style="width: 100%; border-bottom: 1px solid rgb(156, 156, 156)"></span>
                     </section>
+                    <span style="width: 100%; border-bottom: 1px solid rgb(156, 156, 156)"></span>
                     <section class="editar">
-                        Editar perifl
-                        <input type="text" id="nome" placeholder="Nome" required>
-                        <input type="text" id="sobrenome" placeholder="Sobrenome" required>
-                        <input type="email" id="email" placeholder="E-mail" required>
-                        <input type="text" id="username" placeholder="Nome de usuário" required>
-                        <button type="submit" class="botao__acesso">Salvar</button>
+                        <form id="editForm">
+                            Editar perfil
+                            <input type="text" id="nomeInput" placeholder="Novo nome">
+                            <input type="text" id="sobrenomeInput" placeholder="Novo sobrenome">
+                            <button type="submit" class="botao__salvar">Salvar</button>
+                          </form>
                     </section>
                 </div>
             </section>  
         </main>
-
-
-    <!--<div class="dropdown-content2">
-        <a href="#">Currículo</a>
-        <a href="#">LGPD</a>
-        <a href="#">Empresas</a>
-        <a href="#">Sobre</a>
-        
-    </div>-->
     
     <footer>
         <h4>Desenvolvido pelo grupo 3</h4>
     </footer>
     
-    
-
-    
 
     <script src="../assets/js/pagina-principal.js"></script>
     <script>
-        function toggleDropdown() {
-        var dropdownContent = document.querySelector('.dropdown-content');
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        
+        document.addEventListener('DOMContentLoaded', function() {
+        var editForm = document.getElementById('editForm');
+        var nomeInput = document.getElementById('nomeInput');
+        var sobrenomeInput = document.getElementById('sobrenomeInput');
+
+        editForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var username = localStorage.getItem('currentUsername');
+            var user = JSON.parse(localStorage.getItem(username));
+
+            var novoNome = nomeInput.value;
+            var novoSobrenome = sobrenomeInput.value;
+
+            if (isCampoValid(novoNome)) {
+            user.nome = novoNome;
+            }
+            if (isCampoValid(novoSobrenome)) {
+            user.sobrenome = novoSobrenome;
+            }
+
+            localStorage.setItem(username, JSON.stringify(user));
+
+            // Recarregar a página
+            location.reload();
+
+
+        });
+
+        function isCampoValid(dado) {
+            return dado !== null && dado.trim() !== '';
+        }
+        });
+
+
+
+        
+        //-----------------------------------------------------------//
+
+        function testaManip(){
+            var username = localStorage.getItem('currentUsername');
+            console.log(username);
+            var user = JSON.parse(localStorage.getItem(username));
+            console.log(user.password);
+            user.nome = 'teste';
+            console.log(user.password);
+            localStorage.setItem(username, JSON.stringify(user));
+            console.log(user);
         }
 
-        function voltarInicio() {
-            window.location.href = 'pagina-principal.html';
+        //-----------------------------------------------------------//
+
+        function selectFile() {
+        document.getElementById('fileUpload').click();
         }
+
+        document.getElementById('fileUpload').addEventListener('change', handleUpload);
+
+        function handleUpload() {
+        
+        var username = localStorage.getItem('currentUsername');
+        var user = JSON.parse(localStorage.getItem(username));
+    
+        var file = this.files[0];
+
+        var reader = new FileReader();
+        reader.onload = function(event) {
+        var imageBase64 = event.target.result;
+
+        // Salvar a nova imagem no Local Storage, substituindo a imagem anterior
+        user.fotoPerfil = imageBase64;
+        localStorage.setItem(username, JSON.stringify(user));
+
+        // Selecionar o elemento HTML
+        var element = document.getElementById('foto-perfil');
+
+        // Definir a imagem como background
+        element.style.backgroundImage = "url('" + user.fotoPerfil + "')";
+
+        console.log('Imagem enviada e armazenada no Perfil do cabra.');
+        };
+        reader.readAsDataURL(file);
+        }
+
+        // Recuperar a imagem do Local Storage e aplicá-la como background quando a página for carregada
+        window.addEventListener('DOMContentLoaded', function() {
+        var username = localStorage.getItem('currentUsername');
+        var user = JSON.parse(localStorage.getItem(username));
+        var fotoPerfil = user.fotoPerfil;
+
+        var element = document.getElementById('foto-perfil');
+        
+        if (fotoPerfil) {
+        element.innerText = null;
+        element.style.backgroundImage = "url('" + fotoPerfil + "')";
+        }
+        });
+
+
+        //-----------------------------------------------------------//
+
+    
        
       </script>
 </body>

@@ -2,15 +2,18 @@
 .perfil__usuario{
     width: 30%;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     border-radius: 3%;
-    height: 100%;
+    height: 75%;
     padding: 1.5rem;
 }
 
 .identificacao{
     width: 100%;
-    height: 20%;
+    height: 40%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -24,13 +27,17 @@
 }
 
 #foto-perfil{
-    width: 5rem;
-    height: 5rem;
+    width: 12vh;
+    height: 12vh;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.188);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
     background-color: rgb(204, 204, 204);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
 }
 
 .editar{
@@ -48,7 +55,7 @@
     
 }
 
-.botao__acesso{
+.botao__salvar{
     margin-top: 1.5rem;
     padding: 0.3rem;
     width: 40%;
@@ -58,4 +65,9 @@
     border: none;
     outline: none;
     color: white;
+}
+
+.botao__salvar:hover{
+    background-color: rgb(15, 110, 110);
+    cursor: pointer;
 }

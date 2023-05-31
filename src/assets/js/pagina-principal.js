@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Exibe as informações do usuário na página
         var email = user.email;
-        var usename = user.usename;
+        var username = user.username;
         var nome = user.nome;
         var sobrenome = user.sobrenome;
 
@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             console.error("Element with ID 'user-email' not found on the page.");
         }
+
 
 
         } else {

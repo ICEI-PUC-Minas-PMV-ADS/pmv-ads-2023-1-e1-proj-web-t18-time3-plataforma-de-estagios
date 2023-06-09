@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Primeiro estágio</title>
+
+    <script src="src/assets/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+      <!--Cabeçalho-->
+      <header>
+              <nav class="navbar navbar-expand-lg">
+         <a class="navbar-brand logo" href="#"><h2>Primeiro Estágio</h2></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Currículo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+          </ul>
+          <form class="form-inline ml-auto">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Pesquisar"
+                aria-label="Pesquisar"
+              />
+              <button class="btn btn-secondary botao__pesquisa" type="button">
+                <span class="material-icons">search</span>
+              </button>
+            </div>
+          </form>
+          <div class="botoes__acesso ml-md-2">
+            <a class="btn btn-primary" href="./src/pages/login.html">Entrar</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+      <!--Fim do cabeçalho-->
+
+
+      <section class="section__banner"></section>
+      <section class="section__texto">
+        <div>
+          <h1>O primeiro passo para uma carreira promissora começa aqui!</h1>
+          <p>
+            Se você está buscando uma maneira de impulsionar sua carreira, nossa
+            plataforma de estágios é o lugar certo para você. Com acesso a
+            diversas oportunidades de estágio em empresas renomadas em todo o
+            país, você pode dar o primeiro passo em direção a um futuro
+            profissional promissor. Nosso objetivo é conectar você com as
+            melhores opções de estágio e fornecer suporte ao longo de todo o
+            processo, desde a inscrição até a sua contratação. Além disso,
+            oferecemos recursos e ferramentas exclusivas para ajudá-lo a
+            desenvolver suas habilidades e se destacar no mercado de trabalho.
+            Não perca mais tempo, comece agora a sua jornada de sucesso conosco!
+          </p>
+        </div>
+      </section>
+    
+      <section class="section__vagas">
+        <div class="vagas">
+          <h1>Esteja em contato com as melhores!</h1>
+          <p>
+            Encontre as melhores oportunidades de estágio nas maiores empresas
+            do Brasil - só aqui na Primeiro Estágio. Conecte-se agora e dê o
+            primeiro passo para uma carreira de sucesso.
+          </p>
+          <div class="container">
+           <div class="caixa__empresas row">
+            <div class="empresa col-lg-4 col-md-4 col-sm-12" id="stone">
+              <img src="src/assets/img/stone-512.png" alt="" />
+            </div>
+            <div class="empresa col-lg-4 col-md-4 col-sm-12" id="vale">
+              <img src="src/assets/img/logo-vale-512.png" alt="" />
+            </div>
+            <div class="empresa col-lg-4 col-md-4 col-sm-12" id="ifood">
+              <img src="src/assets/img/logo-ifood-512.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </section>
+      <footer>
+        <h4>Desenvolvido pelo grupo 3</h4>
+      </footer>
+
+
+    <script src="src/assets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document
+        .querySelector(".navbar-toggler")
+        .addEventListener("click", function () {
+          document.querySelector(".navbar-collapse").classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: rosybrown;
+    font-family: "Heuvetica Neue", Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ) , url(../img/cadastro-background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+form{
+    width: 350px;
+    padding: 2em;
+    background-color: rgba(255,255,255,0.80);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+    border-left: 10px solid rgb(39, 116, 116);
+}
+
+fieldset{
+    border: none;
+}
+
+input,
+label{
+    display: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: .25em;
+}
+input{
+    padding: .75em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+    border: 1px solid white;
+    font-size: 1em;
+    outline: none;
+}
+
+legend{
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+.botao{
+    font-size: 1em;
+    width: 8em;
+    border-radius: 25px;
+    background-color:  rgb(39, 116, 116);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.justify-center:hover{
+    background-color:rgb(30, 87, 87);
+    cursor: pointer;
+}
+
+
+
+.form__action_btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.form__action__aside{
+    font-size: .85rem;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.form__fieldset{
+    display:flex;
+    flex-direction: column;
+}
+
+.fa-eye{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.btn-cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+
+  header{
+    background-color: #bbabab;
+  }

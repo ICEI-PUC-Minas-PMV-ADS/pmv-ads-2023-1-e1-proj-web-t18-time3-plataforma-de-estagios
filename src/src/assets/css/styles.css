@@ -1,0 +1,70 @@
+@import url(bootstrap.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url(./header.css);
+@import url(./sections.css);
+@import url(./footer.css);
+@import url(./main.css);
+@import url(perfil.css);
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+  /* Estilos para telas de celular */
+  @media only screen and (max-width: 767px) {
+
+    .navbar{ 
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .empresa img{
+        width: 50%;
+        height: 50%;
+        margin: 10px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+  }
+
+  /* Estilos para telas de tablet */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+ 
+    .navbar{ 
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .empresa img{
+        width: 70%;
+        height: 70%;
+        margin: 10px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+  }
+
+  /* Estilos para telas de notebook */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .empresa img{
+        width: 80%;
+        height: 80%;
+        margin: 10px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+  }
+  
+  /* Estilos para telas de desktop */
+  @media only screen and (min-width: 1200px) {
+    .empresa img{
+        width: 80%;
+        height: 80%;
+        margin: 10px;
+        transition: transform 0.5s ease-in-out;
+    }
+  }

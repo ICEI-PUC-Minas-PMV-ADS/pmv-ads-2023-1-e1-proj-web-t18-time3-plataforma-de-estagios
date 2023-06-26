@@ -63,12 +63,13 @@ legend{
     font-size: 1em;
     width: 8em;
     border-radius: 25px;
-    background-color:  rgb(39, 116, 116);;
+    background-color:  rgb(39, 116, 116);
     color: white;
     text-decoration: none;
     cursor: pointer;
     margin: 0;
     border: none;
+    padding: 0.5rem 1rem;
 }
 
 .justify-center:hover{
@@ -124,4 +125,8 @@ legend{
     padding: 10px;
     border-radius: 4px;
     display: none;
+  }
+
+  header{
+    background-color: #bbabab;
   }

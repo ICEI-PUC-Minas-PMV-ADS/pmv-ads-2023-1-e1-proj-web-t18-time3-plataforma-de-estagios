@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Espera o documento ser carregado antes de executar o código
-document.addEventListener('DOMContentLoaded', function() {
+    // Espera o documento ser carregado antes de executar o código
+    document.addEventListener('DOMContentLoaded', function() {
     // Obtém o nome de usuário armazenado no localStorage
     var username = localStorage.getItem('currentUsername');
     console.log(username);

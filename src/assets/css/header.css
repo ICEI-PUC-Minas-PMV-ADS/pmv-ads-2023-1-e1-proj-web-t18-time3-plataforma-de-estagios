@@ -1,11 +1,21 @@
 header{ 
-    align-items: center;
-    background: rgb(241, 241, 241);
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    box-shadow:0px 3px 15px #b3b1b1;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(241, 241, 241);
+    padding: 0 1rem;
+}
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(241, 241, 241);
+}
+
+.navbar{
+    background: rgb(241, 241, 241);
 }
 
 .logo{
@@ -13,54 +23,34 @@ header{
     cursor: pointer;
 }
 
-.menu__lista{
-    display: flex;
+.navbar-nav{
+    padding: 10px;
 }
 
-.menu__item{
-    list-style: none;
+.nav-item{
+    margin: 0.5rem;
 }
 
-.menu__item a{
-    color: #2c2c2c;
-    text-decoration: none;
-    margin-right: 1.25rem
-}
-
-.menu__lista .menu__item a:hover{
+.navbar-nav .nav-item a:hover{
     text-decoration: underline;
 }
 
 .botoes__acesso a{
-    margin: 0.5rem 0.5rem;
-    background-color: rgb(39, 116, 116);
-    padding: 10px 30px;
-    border-radius: 40px;
+    margin: 0.5rem 0.5rem 0.5rem 0 ;
+    background-color: rgb(18, 144, 144);
+    padding: 7px 25px;
+    border-radius: 10px;
+    border: none;
     text-decoration: none;
     color: white;
 }
-.pesquisa{
-    display: flex;
-    padding: 0px 14px;
-}
-
-.barra__pesquisa{
-    width: 400px;
-    height: 30px;
-    outline: none;
-    border: none;
-    padding: 5px;
-}
 
 .botao__pesquisa{
-    width: 40px; 
-    height: 40px;
     background-color: rgb(18, 144, 144);
     display: flex;
-    align-items: center;
-    justify-content: center;
     border: none;
     cursor: pointer;
+    margin-right: 0.5rem;
 }
 
 .botao__pesquisa:hover, .botoes__acesso a:hover{
@@ -72,15 +62,25 @@ header{
     color: rgb(255, 255, 255);
 }
 
+.navbar-toggler{
+    border: none;
+    box-shadow: none;
+}
+
+
+.navbar-toggler:focus { 
+    border: none; 
+    box-shadow: none;
+    background-color: rgb(241, 241, 241);;
+} 
+
 /* ----------19/05-----------------*/
 
-#icone-usuario{
+.icone__usuario{
     width: 40px; /* Tamanho fixo para a div icone__usuario */
     height: 40px;
     border-radius: 100%;
     background-color: rgb(201, 201, 201);
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,3 +143,49 @@ header{
   .dropdown-content a:hover, button:hover{
     background-color: rgb(230, 230, 230);
   }
+
+    /* Estilos para telas de celular */
+    @media only screen and (max-width: 767px) {
+
+        .usuario{
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0;
+            z-index: 3;
+            left: 0;
+        } 
+
+        .dropdown-content a{
+            margin-left: 0.3rem;
+        }
+    
+      }
+    
+      /* Estilos para telas de tablet */
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+     
+        .usuario{
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0;
+            z-index: 3;
+            left: 0;
+        } 
+
+        .dropdown-content a{
+            margin-left: 0.3rem;
+        }
+    
+      }

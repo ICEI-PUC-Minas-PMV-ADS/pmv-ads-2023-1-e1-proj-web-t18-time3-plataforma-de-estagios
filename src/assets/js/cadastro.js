@@ -29,8 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nome: nome,
             sobrenome: sobrenome,   
             email: email,
-            password: password,
-            fotoPerfil: null
+            password: password
         };
   
         // Armazena o usuário no localStorage convertendo para JSON

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/empresa.css" />
+  
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Sobre nós</title>
+  </head>
+  <body>
+    <!--Cabeçalho-->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand logo" href="#"><h2>Primeiro Estágio</h2></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="pagina-principal.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="empresa.html">Empresas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="curriculo.html">Curriculo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+          </ul>
+          <form class="form-inline ml-auto">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Pesquisar"
+                aria-label="Pesquisar"
+              />
+              <button class="btn btn-secondary botao__pesquisa" type="button">
+                <span class="material-icons">search</span>
+              </button>
+            </div>
+          </form>
+          <div class="usuario">
+            <div id="nome"></div>
+            <div class="icone__usuario">
+              <div class="material-icons" onclick="toggleDropdown()">
+                person
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+     <div class="dropdown-content">
+        <a href="./perfil.html">Perfil</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="LGPD.html">Termo de Segurança</a>
+        <button id="logoutButton">Sair</button>
+      </div>
+   
+   
+      <main>
+        <section>
+          <h3>Sobre nós</h3>
+          <h1>Prazer, somos o Primeiro Estagio</h1>
+          <p>Nosso projeto nasceu de um desafio lançado pela universidade PUC-Minas, universidade onde cursamos Análise e Desenvolvimento de Sistemas. O objetivo deste projeto é fornecer uma experiência essencial para a vida dos universitarios. O estágio é um dos momentos mais importantes na vida de um universitário. É através dele que o estudante tem a oportunidade de aplicar na prática todo o conhecimento adquirido em sala de aula, além de desenvolver habilidades e competências que serão cruciais para sua jornada profissional. Durante o estágio, o estudante tem a chance de conhecer o mercado de trabalho, suas rotinas e desafios, além de criar contatos que podem ser valiosos no futuro. Por isso, é importante que os estudantes busquem por oportunidades de estágio desde o início da graduação e aproveitem ao máximo essa experiência tão valiosa.  </p>
+          <h3>Nosso grupo é composto por:</h3>
+          <ul>
+            <li>José Luis Gomes Monteiro</li>
+            <li>Lafayete Queiroz Horta</li>
+            <li>Maria Fernanda Silva Salomão</li>
+          </ul>
+
+          <ul>
+          <h3>Corpo docente</h3>
+          <li>Carlos Barreto </li>
+          <li>Sara Pimenta</li>
+          <li>Joyce Carvalho</li>
+          <li>Clóvis Lemos</li>
+        </ul>
+
+        </section>
+        
+        <section>
+          <h3>Fale conosco</h3>
+          <form id="formulario">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message"></textarea>
+            <br>
+
+            <input type="submit" value="Enviar">
+          </form>
+        </section>
+      </main>
+      <br><br>
+
+    <footer>
+      <h4>Desenvolvido pelo grupo 3</h4>
+    </footer>
+
+    <script src="../assets/js/pagina-principal.js"></script>
+    <script>
+      function toggleDropdown() {
+        var dropdownContent = document.querySelector(".dropdown-content");
+        dropdownContent.style.display =
+          dropdownContent.style.display === "block" ? "none" : "block";
+      }
+
+      function toggleDropdown2() {
+        var dropdownContent = document.querySelector(".dropdown-content2");
+        dropdownContent.style.display =
+          dropdownContent.style.display === "block" ? "none" : "block";
+      }
+
+      document
+        .querySelector(".navbar-toggler")
+        .addEventListener("click", function () {
+          document.querySelector(".navbar-collapse").classList.toggle("show");
+        });
+
+    </script>
+  </body>
+</html>

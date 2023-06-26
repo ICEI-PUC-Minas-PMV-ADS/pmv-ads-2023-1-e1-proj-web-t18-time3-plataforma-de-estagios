@@ -1,3 +1,8 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .perfil__usuario{
     width: 30%;
@@ -7,7 +12,7 @@
     justify-content: space-between;
     background-color: white;
     border-radius: 3%;
-    height: 75%;
+    height: 100%;
     padding: 1.5rem;
 }
 
@@ -70,4 +75,19 @@
 .botao__salvar:hover{
     background-color: rgb(15, 110, 110);
     cursor: pointer;
+}
+
+
+ /* Estilos para telas de celular */
+ @media only screen and (max-width: 767px) {
+
+    
+    .perfil__usuario{
+        width: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3%;
+    }
 }

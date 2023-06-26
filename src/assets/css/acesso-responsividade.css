@@ -1,0 +1,44 @@
+@import url(bootstrap.min.css);
+
+  /* Estilos para telas de celular */
+  @media only screen and (max-width: 767px) {
+
+    
+.janela__formulario{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.377);
+    border-radius: 1rem;
+}
+
+.lado__acesso{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.lado__acesso__conteudo{
+    margin: 1rem;
+    width: 500px;
+    height: 87.5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.lado__acesso__conteudo form{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+}
+}

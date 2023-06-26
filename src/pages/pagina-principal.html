@@ -1,86 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="../assets/js/header.js"></script>
-    <title>Página principal</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <title>Página principal</title>
 </head>
+
 <body>
-    
-    <header>
-        <h2 class="logo" onclick="voltarInicio()">Primeiro estágio</h2>
-        <nav>
-            <ul class="menu__lista">
-                <li class="menu__item"><a href="#">Currículo</a></li>
-                <li class="menu__item"><a href="#">Empresas</a></li>
-                <li class="menu__item"><a href="#">LGPD</a></li>
-                <li class="menu__item"><a href="#">Sobre</a></li>
-            </ul>
-        </nav>
-    
-       
-
-        <form action="">
-            <div class="pesquisa">
-                <input type="text" name="" id="pesquisa" class="barra__pesquisa" placeholder="Pesquise vagas...">
-                <button class="botao__pesquisa"><span class="material-icons">search</span></button>
-            </div>
+  <!--Cabeçalho-->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand logo" href="#">
+        <h2>Primeiro Estágio</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="pagina-principal.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="empresa.html">Empresas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="curriculo.html">Curriculo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+        </ul>
+        <form class="form-inline ml-auto">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" />
+            <button class="btn btn-secondary botao__pesquisa" type="button">
+              <span class="material-icons">search</span>
+            </button>
+          </div>
         </form>
-
         <div class="usuario">
-            <div id="nome"></div>
-            <div>
-                <div id="icone-usuario" class="material-icons" onclick="toggleDropdown()">person</div>
+          <div id="nome"></div>
+          <div class="icone__usuario">
+            <div class="material-icons" onclick="toggleDropdown()">
+              person
             </div>
+          </div>
         </div>
-        
-    
-        </header>
+      </div>
+    </nav>
+  </header>
 
-        <div class="dropdown-content">
-            <a href="./perfil.html">Perfil</a>
-            <a href="#">Favoritos</a>
-            <button id="logoutButton">Sair</button>
+  <div class="dropdown-content">
+    <a href="./perfil.html">Perfil</a>
+    <a href="curriculo.html">Currículo</a>
+    <a href="LGPD.html">Termo de Segurança</a>
+    <button id="logoutButton">Sair</button>
+  </div>
+
+  <main>
+    <section id="intro">
+      <h3>O mercado de trabalho está cada vez mais competitivo</h3>
+      <p>Com o aumento do número de formandos em cursos universitários, a disputa por vagas no mercado de trabalho está
+        cada vez mais acirrada. Por isso, é fundamental que os estudantes se preparem desde cedo para ingressar no
+        mercado de trabalho, e uma das melhores maneiras de fazer isso é através de estágios.</p>
+    </section>
+
+    <section id="vagas">
+      <h3>Vagas de Estágio</h3>
+      <div class="abas">
+        <button class="aba ativa" data-alvo="marketing">Marketing</button>
+        <button class="aba" data-alvo="ti">TI</button>
+        <button class="aba" data-alvo="engenharia">Engenharia</button>
+      </div>
+      <div class="conteudos">
+        <div class="conteudo ativo" id="marketing">
+          <h3>Estágio em Marketing</h3>
+          <p>Descrição exemplo.</p>
+          <p>Requisitos:</p>
+          <ul>
+            <li>Cursando Marketing, Publicidade e Propaganda, ou áreas afins;</li>
+            <li>Conhecimento em pacote Adobe (Photoshop, Illustrator e InDesign);</li>
+            <li>Disponibilidade para estagiar 6 horas por dia.</li>
+          </ul>
         </div>
-        <main>
-            <section class="principal">
-                a
-            </section>  
-        </main>
+        <div class="conteudo" id="ti">
+          <h3>Estágio em TI</h3>
+          <p>Descrição exemplo.</p>
+          <p>Requisitos:</p>
+          <ul>
+            <li>Cursando Ciência da Computação, Sistemas de Informação, ou áreas afins;</li>
+            <li>Conhecimento em linguagens de programação (Java, C++, Python);</li>
+            <li>Disponibilidade para estagiar 6 horas por dia.</li>
+          </ul>
+        </div>
+        <div class="conteudo" id="engenharia">
+          <h3>Estágio em Engenharia</h3>
+          <p>Descrição exemplo.</p>
+          <p>Requisitos:</p>
+          <ul>
+            <li>Cursando Engenharia Civil, Mecânica, Elétrica, ou áreas afins;</li>
+            <li>Conhecimento em AutoCAD;</li>
+            <li>Disponibilidade para estagiar 6 horas por dia.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <h4>Desenvolvido pelo grupo 3</h4>
+  </footer>
 
-    <!--<div class="dropdown-content2">
-        <a href="#">Currículo</a>
-        <a href="#">LGPD</a>
-        <a href="#">Empresas</a>
-        <a href="#">Sobre</a>
-        
-    </div>-->
-    
-    <footer>
-        <h4>Desenvolvido pelo grupo 3</h4>
-    </footer>
-    
-    
+  <script src="../assets/js/pagina-principal.js"></script>
+  <script>
+    function toggleDropdown() {
+      var dropdownContent = document.querySelector(".dropdown-content");
+      dropdownContent.style.display =
+        dropdownContent.style.display === "block" ? "none" : "block";
+    }
 
-    
+    function toggleDropdown2() {
+      var dropdownContent = document.querySelector(".dropdown-content2");
+      dropdownContent.style.display =
+        dropdownContent.style.display === "block" ? "none" : "block";
+    }
 
-    <script src="../assets/js/pagina-principal.js"></script>
-    <script>
-        function toggleDropdown() {
-        var dropdownContent = document.querySelector('.dropdown-content');
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-        }
+    document
+      .querySelector(".navbar-toggler")
+      .addEventListener("click", function () {
+        document.querySelector(".navbar-collapse").classList.toggle("show");
+      });
 
-        function toggleDropdown2() {
-        var dropdownContent = document.querySelector('.dropdown-content2');
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-        }
-       
-      </script>
+  </script>
 </body>
+
 </html>

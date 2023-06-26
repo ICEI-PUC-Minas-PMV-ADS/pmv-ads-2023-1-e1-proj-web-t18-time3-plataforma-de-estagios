@@ -1,14 +1,16 @@
+body{
+    background-color: rgb(209,209,209);
+}
+
 main{
-    display: flex;
     position:relative;
-    height: 50rem;
     padding: 3rem;
     background-color: rgb(209,209,209);
     z-index: 1;
 }
 
 .principal{
-    height: 100%;
+    height: 100;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -47,5 +49,5 @@ main{
     border-radius: 100%;
     background-color: rgb(204, 204, 204);
 
-}
 
+}
